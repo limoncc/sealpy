@@ -7,10 +7,31 @@ Git仓库地址: https://github.com/limoncc/sealpy.git
 
 ## 安装
 
-    pip install sealpy
+```shell
+pip install sealpy3
+```
+    
 
 ## 使用方法
 
-    sealpy -i "xxx project dir" [-o output dir]
+使用参数
+```shell
+sealpy -i "xxx project dir" [-o output dir]
+```
 
 加密后的文件默认存储在 dist/project_name/ 下
+
+使用配置文件
+
+```
+; 工作目录下的./.sealpy.cfg
+[sealpy]
+; the file that will be compiled
+paths = test
+; files that are ignored at compile time. If an empty string is not used, multiple files and folders are separated by commas
+ignores = ''
+; The build directory
+build_dir = build
+; If there is an entry file, it needs to be specified to exclude compilation
+main_py = main.py
+```

@@ -8,3 +8,6 @@ out
 gen
 build
 dist
+pypi_key
+.venv
+.sealpy.cfg

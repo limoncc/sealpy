@@ -3,14 +3,14 @@ import sys
 import getopt
 import configparser
 
-from sealpy.seal_py import start_encrypt
+from sealpy3.seal_py import start_encrypt
 
 
 def usage():
     """
 python代码 加密|加固
 参数说明：
-    build                     使用当前目录下的 .sealpy.cfg 配置文件
+    build                     使用当前目录下的 .sealpy3.cfg 配置文件
     -i | --input_file_path    待加密文件或文件夹路径，可是相对路径或绝对路径
     -o | --output_file_path   加密后的文件输出路径，默认在input_file_path下创建dist文件夹，存放加密后的文件
     -I | --ignore_files       不需要加密的文件或文件夹，逗号分隔
@@ -46,7 +46,7 @@ def execute():
         
         # 检查是否有 build 参数
         if len(sys.argv) > 1 and sys.argv[1] == "build":
-            # 自动使用当前目录下的 .sealpy.cfg 文件
+            # 自动使用当前目录下的 .sealpy3.cfg 文件
             current_dir = os.getcwd()
             config_path = os.path.join(current_dir, ".sealpy.cfg")
             if not os.path.exists(config_path):

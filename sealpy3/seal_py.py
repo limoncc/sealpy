@@ -8,7 +8,7 @@ from typing import Union, List
 
 from Cython.Build import cythonize
 
-from sealpy.log import logger
+from sealpy3.log import logger
 
 
 class HiddenPrints:
