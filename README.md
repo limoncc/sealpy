@@ -35,3 +35,8 @@ build_dir = build
 ; If there is an entry file, it needs to be specified to exclude compilation
 main_py = main.py
 ```
+
+运行命令
+```shell
+sealpy build
+```
